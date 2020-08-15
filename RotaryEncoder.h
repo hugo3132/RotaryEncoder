@@ -25,6 +25,7 @@ public:
   // a 1 for the entries where the position was incremented
   // and 0 in all the other (no change or not valid) cases.
 
+public:
   const int8_t KNOBDIR[16] = {0, -1, 1, 0, 1, 0, 0, -1, -1, 0, 0, 1, 0, 1, -1, 0};
 
   // positions: [3] 1 0 2 [3] 1 0 2 [3]
@@ -32,21 +33,21 @@ public:
   // ==> right, count up
   // <== left,  count down
 
-protected:
+public:
   /**
    * @brief The pin of the microcontroller to which the CLK pin of the encoder
    * is connected.
    */
   const uint8_t pinClk;
 
-protected:
+public:
   /**
    * @brief The pin of the microcontroller to which the DT pin of the encoder
    * is connected.
    */
   const uint8_t pinDt;
 
-protected:
+public:
   /**
    * @brief The pin of the microcontroller to which the Switch pin of the
    * encoder is connected.
